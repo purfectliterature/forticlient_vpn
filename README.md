@@ -16,6 +16,10 @@ sudo /opt/forticlient/vpn -s <your_vpn_server> -u <your_username> -p
 
 It will ask for `password:` via standard input. If you're using a GUI, there should be some GUI binaries in `/opt/forticlient` too.
 
+## For use in CircleCI
+
+I originally researched this to configure a CircleCI job to deploy on a server behind a Fortinet SSL-VPN. You can find the very hard to find Debian packages in [the releases](https://github.com/purfectliterature/forticlient_vpn/releases). Thanks to GitHub, these are all permalinks.
+
 ## Official EMS clients
 
 The regular, EMS clients are available officially on [Fortinet's APT repository](https://repo.fortinet.com/repo/forticlient/7.2/ubuntu/pool/multiverse/forticlient/). To install officially from this repository, add the GPG keys and install with `apt`.
